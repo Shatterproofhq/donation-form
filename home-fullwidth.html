@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	
+	<title>Donation form</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+
+	<link rel="stylesheet" href="css/client-styles.css" type="text/css" media="all" />
+	
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="donation-form">
+<div class="wrapper">
+	<section class="section" style="background-image: url(css/images/temp/section-image1.jpg)">
+		<div class="form-donate">
+			<form action="?" method="post" class="validate">
+				<div class="form__content">
+					<header class="form__head">
+						<h3>Give now, help save a life.</h3>
+					</header><!-- /.form__head -->
+
+					<div class="form__body">
+						<div class="form__inner">
+							<span>100%</span>
+
+							<p>100% of your donation goes directly to programs to help end addiction.</p>
+						</div><!-- /.form__inner -->
+
+						<ul class="list-radios">
+							<li>
+								<div class="radio">
+									<input type="radio" name="UnitPrice1" id="UnitPrice1" value="100" data-validate />
+									
+									<label class="form__label" for="field-50">$100</label>
+								</div><!-- /.radio -->
+							</li>
+							
+							<li>
+								<div class="radio">
+									<input type="radio" name="UnitPrice1" id="UnitPrice1" value="200" data-validate />
+									
+									<label class="form__label" for="field-100">$200</label>
+								</div><!-- /.radio -->
+							</li>
+							
+							<li>
+								<div class="radio">
+									<input type="radio" name="UnitPrice1" id="UnitPrice1" value="300" data-validate />
+									
+									<label class="form__label" for="field-200">$300</label>
+								</div><!-- /.radio -->
+							</li>
+							
+							<li>
+								<div class="radio">
+									<input type="radio" name="UnitPrice1" id="UnitPrice1" value="500" data-validate />
+									
+									<label class="form__label" for="field-500">$500</label>
+								</div><!-- /.radio -->
+							</li>
+						</ul><!-- /.list-radios -->
+
+						<div class="form__row">
+							<input type="text" class="field" name="field-own-amount" id="field-own-amount" value="" placeholder="Enter my own amount">
+						</div><!-- /.form__row -->
+
+						<div class="form__entry">
+							<h4>MAKE IT MONTHLY</h4>
+
+							<p>Will you make this a recurring monthly gift? We depend on great partners like you to help fund our innovate programs.</p>
+
+							<div class="checkbox">
+								<input type="checkbox" name="RecurringMethod">
+								
+								<label class="form__label" for="RecurringMethod">
+									<span></span>
+
+									Yes, make this donation a monthly gift
+								</label>
+							</div><!-- /.checkbox -->
+						</div><!-- /.form__entry -->
+
+						<section class="form__section">
+							<h4>Credit Card Information</h4>
+
+							<img src="css/images/temp/cards.jpg" alt="" width="150" height="23">
+
+							<div class="form__row">
+								<input name="CardNumber" type="text" id="CardNumber" value="" size="40" placeholder="Credit Card Number" class="field" data-validate="number">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<div class="form__cols">
+									<div class="form__col form__col--1of3">
+										<div class="select">
+											<select name="ExpirationMonth" id="ExpirationMonth" data-validate>
+									            <option value="01">1</option>
+									            <option value="02">2</option>
+									            <option value="03">3</option>
+									            <option value="04">4</option>
+									            <option value="05">5</option>
+									            <option value="06">6</option>
+									            <option value="07">7</option>
+									            <option value="08">8</option>
+									            <option value="09">9</option>
+									            <option value="10">10</option>
+									            <option value="11">11</option>
+									            <option value="12">12</option>
+								          	</select>
+										</div><!-- /.select -->
+									</div><!-- /.form__col-1of3 -->
+									
+									<div class="form__col form__col--1of3">
+										<div class="select">
+											<select name="ExpirationYear" id="ExpirationYear" data-validate>
+												<option value="17">2017</option>
+												<option value="18">2018</option>
+												<option value="19">2019</option>
+												<option value="20">2020</option>
+												<option value="21">2021</option>
+												<option value="22">2022</option>
+												<option value="23">2023</option>
+												<option value="24">2024</option>
+												<option value="25">2025</option>
+												<option value="26" selected="selected">2026</option>
+											</select>
+										</div><!-- /.select -->
+									</div><!-- /.form__col-1of3 -->
+									
+									<div class="form__col form__col--1of3">
+										<div class="form__field">
+											<input name="Cvv2" type="text" value="123" size="6" class="field" placeholder="CCV" data-validate="number">
+											
+											<i class="ico-question"></i>
+										</div><!-- /.form__inner -->
+									</div><!-- /.form__col-1of3 -->
+								</div><!-- /.form__cols -->
+							</div><!-- /.form__row -->
+						</section><!-- /.form__section -->
+
+						<section class="form__section">
+							<h4>Your Information</h4>
+
+							<div class="form__row">
+								<div class="form__cols">
+									<div class="form__col form__col--1of2">
+										<input name="BillingFirstName" type="text" id="BillingFirstName" value="" size="30" placeholder="First Name" class="field" data-validate="presence">
+									</div><!-- /.form__col form__col-/-1of2 -->
+									
+									<div class="form__col form__col--1of2">
+										<input name="BillingLastName" type="text" id="BillingLastName" value="" size="30" placeholder="Last Name" class="field" data-validate="presence">
+									</div><!-- /.form__col form__col-/-1of2 -->
+								</div><!-- /.form__cols -->
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="BillingAddress1" type="text" id="BillingAddress1" value="" size="40" placeholder="Billing Address" class="field" data-validate="presence">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<div class="form__cols">
+									<div class="form__col form__col--1of2">
+										<input name="BillingCity" type="text" id="BillingCity" value="" size="40" placeholder="City" class="field" data-validate="presence">
+									</div><!-- /.form__col form__col-/-1of2 -->
+									
+									<div class="form__col form__col--1of2">
+										<div class="select">
+											<select name="BillingStateProvince" size="1" id="BillingStateProvince" data-validate>
+												<option value="Alabama">Alabama</option>
+												<option value="Alaska">Alaska</option>
+												<option value="Arizona">Arizona</option>
+												<option value="Arkansas">Arkansas</option>
+												<option value="Armed Forces- Africa">Armed Forces- Africa</option>
+												<option value="Armed Forces- Americas">Armed Forces- Americas</option>
+												<option value="Armed Forces- Canada">Armed Forces- Canada</option>
+												<option value="Armed Forces- Europe">Armed Forces- Europe</option>
+												<option value="Armed Forces- Middle East">Armed Forces- Middle East</option>
+												<option value="Armed Forces- Pacific">Armed Forces- Pacific</option>
+												<option value="California">California</option>
+												<option value="Colorado">Colorado</option>
+												<option value="Connecticut">Connecticut</option>
+												<option value="Delaware">Delaware</option>
+												<option value="District of Columbia">District of Columbia</option>
+												<option value="Federated States of Micronesia">Federated States of Micronesia</option>
+												<option value="Florida">Florida</option>
+												<option value="Georgia">Georgia</option>
+												<option value="Guam">Guam</option>
+												<option value="Hawaii">Hawaii</option>
+												<option value="Idaho">Idaho</option>
+												<option value="Illinois">Illinois</option>
+												<option value="Indiana">Indiana</option>
+												<option value="Iowa">Iowa</option>
+												<option value="Kansas">Kansas</option>
+												<option value="Kentucky">Kentucky</option>
+												<option value="Louisiana">Louisiana</option>
+												<option value="Maine">Maine</option>
+												<option value="Maryland">Maryland</option>
+												<option value="Massachusetts">Massachusetts</option>
+												<option value="Michigan">Michigan</option>
+												<option value="Minnesota">Minnesota</option>
+												<option value="Mississippi">Mississippi</option>
+												<option value="Missouri">Missouri</option>
+												<option value="Montana">Montana</option>
+												<option value="Nebraska">Nebraska</option>
+												<option value="Nevada">Nevada</option>
+												<option value="New Hampshire">New Hampshire</option>
+												<option value="New Jersey">New Jersey</option>
+												<option value="New Mexico">New Mexico</option>
+												<option value="New York">New York</option>
+												<option value="North Carolina">North Carolina</option>
+												<option value="North Dakota">North Dakota</option>
+												<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+												<option value="Ohio">Ohio</option>
+												<option value="Oklahoma">Oklahoma</option>
+												<option value="Oregon">Oregon</option>
+												<option value="Palau">Palau</option>
+												<option value="Pennsylvania">Pennsylvania</option>
+												<option value="Puerto Rico">Puerto Rico</option>
+												<option value="Rhode Island">Rhode Island</option>
+												<option value="South Carolina">South Carolina</option>
+												<option value="South Dakota">South Dakota</option>
+												<option value="Tennessee">Tennessee</option>
+												<option value="Texas">Texas</option>
+												<option value="Utah">Utah</option>
+												<option value="Vermont">Vermont</option>
+												<option value="Virgin Islands- US">Virgin Islands- US</option>
+												<option value="Virginia">Virginia</option>
+												<option value="Washington">Washington</option>
+												<option value="West Virginia">West Virginia</option>
+												<option value="Wisconsin">Wisconsin</option>
+												<option value="Wyoming">Wyoming</option>
+											</select>
+										</div><!-- /.select -->
+									</div><!-- /.form__col form__col-/-1of2 -->
+								</div><!-- /.form__cols -->
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<div class="form__cols">
+									<div class="form__col form__col--1of2">
+										<div class="select">
+											<select name="BillingCountryCode" size="1" id="BillingCountryCode" data-validate>
+												<option value="004">Afghanistan</option>
+												<option value="008">Albania</option>
+												<option value="012">Algeria</option>
+												<option value="016">American Samoa</option>
+												<option value="020">Andorra</option>
+												<option value="024">Angola</option>
+												<option value="010">Antarctica</option>
+												<option value="028">Antigua and Barbuda</option>
+												<option value="032">Argentina</option>
+												<option value="051">Armenia</option>
+												<option value="533">Aruba</option>
+												<option value="036">Australia</option>
+												<option value="040">Austria</option>
+												<option value="031">Azerbaijan Rep.</option>
+												<option value="044">Bahamas </option>
+												<option value="048">Bahrain</option>
+												<option value="050">Bangladesh</option>
+												<option value="052">Barbados</option>
+												<option value="112">Belarus</option>
+												<option value="056">Belgium</option>
+												<option value="084">Belize</option>
+												<option value="204">Benin</option>
+												<option value="060">Bermuda</option>
+												<option value="064">Bhutan</option>
+												<option value="068">Bolivia</option>
+												<option value="070">Bosnia</option>
+												<option value="072">Botswana</option>
+												<option value="076">Brazil</option>
+												<option value="096">Brunei</option>
+												<option value="100">Bulgaria</option>
+												<option value="854">Burkina Faso</option>
+												<option value="108">Burundi</option>
+												<option value="116">Cambodia</option>
+												<option value="120">Cameroon</option>
+												<option value="124">Canada</option>
+												<option value="132">Cape Verde Islands</option>
+												<option value="136">Cayman Islands</option>
+												<option value="140">Central African Republic</option>
+												<option value="148">Chad</option>
+												<option value="152">Chile</option>
+												<option value="156">China People's Republic</option>
+												<option value="170">Columbia</option>
+												<option value="174">Comoros</option>
+												<option value="178">Congo</option>
+												<option value="184">Cook Islands</option>
+												<option value="188">Costa Rica</option>
+												<option value="191">Croatia</option>
+												<option value="192">Cuba</option>
+												<option value="196">Cyprus</option>
+												<option value="203">Czech Republic</option>
+												<option value="208">Denmark</option>
+												<option value="262">Djibouti</option>
+												<option value="214">Dominican Republic</option>
+												<option value="218">Ecuador</option>
+												<option value="818">Egypt</option>
+												<option value="222">El Salvador</option>
+												<option value="226">Equatorial Guinea Malabo</option>
+												<option value="232">Eritrea</option>
+												<option value="233">Estonia</option>
+												<option value="231">Ethiopia</option>
+												<option value="242">Fiji Islands</option>
+												<option value="246">Finland</option>
+												<option value="250">France</option>
+												<option value="254">French Guiana</option>
+												<option value="258">French Polynesia</option>
+												<option value="266">Gabon</option>
+												<option value="270">Gambia</option>
+												<option value="268">Georgia</option>
+												<option value="276">Germany</option>
+												<option value="288">Ghana</option>
+												<option value="292">Gibraltar</option>
+												<option value="300">Greece</option>
+												<option value="304">Greenland</option>
+												<option value="308">Grenada</option>
+												<option value="312">Guadeloupe</option>
+												<option value="316">Guam</option>
+												<option value="320">Guatemala</option>
+												<option value="324">Guinea</option>
+												<option value="328">Guyana</option>
+												<option value="332">Haiti</option>
+												<option value="340">Honduras</option>
+												<option value="344">Hong Kong</option>
+												<option value="348">Hungary</option>
+												<option value="352">Iceland</option>
+												<option value="356">India</option>
+												<option value="360">Indonesia</option>
+												<option value="364">Iran</option>
+												<option value="368">Iraq</option>
+												<option value="372">Ireland</option>
+												<option value="376">Israel</option>
+												<option value="380">Italy</option>
+												<option value="388">Jamaica</option>
+												<option value="392">Japan</option>
+												<option value="400">Jordan</option>
+												<option value="398">Kazakhstan</option>
+												<option value="404">Kenya</option>
+												<option value="296">Kiribati</option>
+												<option value="410">Korea, Republic of</option>
+												<option value="414">Kuwait</option>
+												<option value="417">Kyrgystan</option>
+												<option value="428">Latvia</option>
+												<option value="422">Lebanon</option>
+												<option value="426">Lesotho</option>
+												<option value="430">Liberia</option>
+												<option value="434">Libya</option>
+												<option value="438">Liechtenstein</option>
+												<option value="440">Lithuania</option>
+												<option value="442">Luxembourg</option>
+												<option value="446">Macao</option>
+												<option value="807">Macedonia</option>
+												<option value="450">Madagascar</option>
+												<option value="454">Malawi</option>
+												<option value="458">Malaysia</option>
+												<option value="462">Maldives</option>
+												<option value="466">Mali</option>
+												<option value="470">Malta</option>
+												<option value="584">Marshall Islands</option>
+												<option value="474">Martinique</option>
+												<option value="478">Mauritania</option>
+												<option value="480">Mauritius</option>
+												<option value="484">Mexico</option>
+												<option value="583">Micronesia</option>
+												<option value="498">Moldova</option>
+												<option value="492">Monaco</option>
+												<option value="496">Mongolia</option>
+												<option value="499">Montenegro</option>
+												<option value="500">Montserrat</option>
+												<option value="504">Morocco</option>
+												<option value="508">Mozambique</option>
+												<option value="104">Myanmar</option>
+												<option value="516">Namibia</option>
+												<option value="520">Nauru</option>
+												<option value="524">Nepal</option>
+												<option value="528">Netherlands</option>
+												<option value="530">Netherlands Antilles</option>
+												<option value="540">New Caledonia</option>
+												<option value="554">New Zealand</option>
+												<option value="558">Nicaragua</option>
+												<option value="562">Niger</option>
+												<option value="566">Nigeria</option>
+												<option value="570">Niue</option>
+												<option value="580">Northern Mariana Islands</option>
+												<option value="578">Norway</option>
+												<option value="512">Oman</option>
+												<option value="586">Pakistan</option>
+												<option value="585">Palau</option>
+												<option value="591">Panama</option>
+												<option value="598">Papua New Guinea</option>
+												<option value="600">Paraguay</option>
+												<option value="604">Peru</option>
+												<option value="608">Phillippines</option>
+												<option value="616">Poland</option>
+												<option value="620">Portugal</option>
+												<option value="634">Qatar</option>
+												<option value="642">Romania</option>
+												<option value="643">Russian Federation</option>
+												<option value="646">Rwanda</option>
+												<option value="654">Saint Helena</option>
+												<option value="659">Saint Kitts and Nevis</option>
+												<option value="666">Saint Pierre and Miquelon</option>
+												<option value="674">San Marino</option>
+												<option value="678">Sao Tome and Principe</option>
+												<option value="682">Saudi Arabia</option>
+												<option value="686">Senegal</option>
+												<option value="688">Serbia</option>
+												<option value="690">Seychelles</option>
+												<option value="694">Sierra Leone</option>
+												<option value="702">Singapore</option>
+												<option value="703">Slovakia</option>
+												<option value="705">Slovenia</option>
+												<option value="090">Solomon Islands</option>
+												<option value="706">Somalia</option>
+												<option value="710">South Africa</option>
+												<option value="724">Spain</option>
+												<option value="144">Sri Lanka</option>
+												<option value="736">Sudan</option>
+												<option value="740">Suriname</option>
+												<option value="748">Swaziland</option>
+												<option value="752">Sweden</option>
+												<option value="756">Switzerland</option>
+												<option value="760">Syria</option>
+												<option value="158">Taiwan</option>
+												<option value="762">Tajikistan</option>
+												<option value="834">Tanzania</option>
+												<option value="764">Thailand</option>
+												<option value="772">Tokelau</option>
+												<option value="768">Tonga</option>
+												<option value="780">Trinidad and Tobago</option>
+												<option value="788">Tunisia</option>
+												<option value="792">Turkey</option>
+												<option value="795">Turkmenistan</option>
+												<option value="798">Tuvalu</option>
+												<option value="800">Uganda</option>
+												<option value="804">Ukraine</option>
+												<option value="784">United Arab Emirates</option>
+												<option value="826">United Kingdom</option>
+												<option value="840">United States of America</option>
+												<option value="858">Uruguay</option>
+												<option value="860">Uzbekistan</option>
+												<option value="548">Vanuatu</option>
+												<option value="336">Vatican City</option>
+												<option value="862">Venzuela</option>
+												<option value="704">Vietnam</option>
+												<option value="876">Wallis and Futuna</option>
+												<option value="016">Western Samoa</option>
+												<option value="887">Yemen, People's Demo. Rep. Of</option>
+												<option value="807">Yugoslavia</option>
+												<option value="894">Zambia</option>
+												<option value="716">Zimbabwe</option>
+											</select>
+										</div><!-- /.select -->
+									</div><!-- /.form__col form__col-/-1of2 -->
+
+									<div class="form__col form__col--1of2">
+										<input name="BillingPostalCode" type="text" id="BillingPostalCode" value="" size="15" placeholder="Zip/Postal Code" class="field" data-validate="number">
+									</div><!-- /.form__col form__col-/-1of2 -->
+								</div><!-- /.form__cols -->
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="BillingEmail" type="text" id="BillingEmail" value="" size="40" placeholder="Email Address" class="field" data-validate="email">
+
+								<small>If you donate and have not registered, you will receive periodic updates &amp; communications from Shatterproof</small>
+							</div><!-- /.form__row -->
+						</section><!-- /.form__section -->
+
+						<section class="form__section">
+							<h4>Double your gift</h4>
+
+							<p>Double (or triple!) your gift by seeing if your company matches donations.</p>
+
+							<div class="form__row">
+								<div class="form__cols">
+									<div class="form__col form__col--size-1">
+										<script src="https://doublethedonation.com/api/js/ddplugin.js"></script>
+
+									    <script type="text/javascript" src="https://clickandpledge.s3.amazonaws.com/scripts/clickandpledge-doublethedonation.1.0.min.js?apikey=ODMyMTNjNDgtMzcx" data-name="clickandpledge-doublethedonation"></script>
+									</div><!-- /.form__col form__col-/-size1 -->
+									
+									<div class="form__col form__col--size-2">
+										<a href="#" class="form__btn">Search</a>
+									</div><!-- /.form__col form__col-/-size2 -->
+								</div><!-- /.form__cols -->
+							</div><!-- /.form__row -->
+						</section><!-- /.form__section -->
+
+						<section class="form__section">
+							<h4>
+								HONOR SOMEONE 
+
+								<small>(OPTIONAL)</small>
+							</h4>
+
+							<p>If you would like to make your gift in honor or in memory of your loved one, please select an option and fill out the form below.</p>
+
+							<div class="form__row">
+								<div class="select">
+									<select name="field-honor" id="field-honor">
+										<option value="0">-- optional --</option>
+										<option value="1">Honor</option>
+									</select>
+								</div><!-- /.select -->
+							</div><!-- /.form__row -->
+						</section><!-- /.form__section -->
+
+						<div class="form__honor">
+							<h5>Honor Gift Expandable</h5>
+
+							<ul class="list-radios list-radios--small">
+								<li>
+									<div class="radio radio--small">
+										<input name="FieldValue1" type="radio" data-validate>
+										
+										<label class="form__label" for="field-1#">In memory of</label>
+									</div><!-- /.radio -->
+								</li>
+								
+								<li>
+									<div class="radio radio--small">
+										<input name="FieldValue1" type="radio" data-validate>
+										
+										<label class="form__label" for="field-2#">In honor of</label>
+									</div><!-- /.radio -->
+								</li>
+							</ul><!-- /.list-radios -->
+
+							<div class="form__row">
+								<input name="FieldValue2" type="text" size="30" class="field" placeholder="Honoree’s Name" data-validate="presence">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="FieldValue3" type="text" size="4" class="field" placeholder="Honoree's Address" data-validate="presence">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="FieldValue5" type="text" size="30" class="field" placeholder="Honoree's Information" data-validate="presence">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="FieldValue4" type="text" size="30" class="field" placeholder="Honoree's City" data-validate="presence">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="FieldValue6" type="text" size="30" class="field" placeholder="Honoree's State" data-validate="presence">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="FieldValue7" type="text" size="30" class="field" placeholder="Honoree's Zip" data-validate="number">
+							</div><!-- /.form__row -->
+
+							<div class="form__row">
+								<input name="FieldValue8" type="text" size="30" class="field" placeholder="Message to Honoree" data-validate="presence">
+							</div><!-- /.form__row -->
+						</div><!-- /.form__honor -->
+
+						<div class="form__actions">
+							<input type="submit" value="Give Now" class="form__btn">
+
+							<small>v
+								For planned giving or gifts of stock, please 
+
+								<a href="#">contact us</a>.
+							</small>
+
+							<small>
+								If you prefer to donate by mail please complete 
+
+								<a href="#">this form</a>.
+
+								If you have questions or to donate by phone, please call (800) 597-2557.
+							</small>
+
+							<small>
+								Shatterproof<br>
+								101 Merritt 7 Corporate Park<br>
+								1st Floor, Norwalk, CT 06851
+							</small>
+						</div><!-- /.form__actions -->
+					</div><!-- /.form__body -->
+				</div><!-- /.footer__content -->
+			</form>
+		</div><!-- /.form-donate -->
+	</section><!-- /.section -->
+</div><!-- /.wrapper -->
+
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<script src="js/validator.js"></script>
+
+<script src="js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* ================================================================ *\
+	#Reset
+\* ================================================================ */
+
+* { padding: 0; margin: 0; outline: 0; }
+
+/* ================================================================ *\
+	#Base
+\* ================================================================ */
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section { display: block; }
+
+html,
+body { height: 100%; }
+
+html { overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { min-width: 980px; background: #fff; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.3; color: #000; -webkit-font-smoothing:antialiased; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { border: 0; vertical-align: middle; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+button,
+input,
+select,
+textarea { font-family: inherit; font-size: inherit; color: inherit; -webkit-font-smoothing:antialiased; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] { cursor: pointer; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { padding: 0; border: 0; }
+
+button { overflow: visible; }
+textarea { overflow: auto; resize: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+th,
+td { padding: 0; }
+
+/* ================================================================ *\
+	#Helpers
+\* ================================================================ */
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.hidden { display: none; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after { display: table; content: ' '; }
+.clearfix:after { clear: both; }
+
+/* ------------------------------------------------------------ *\
+	Fonts
+\* ------------------------------------------------------------ */
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museo-sans/MuseoSans-700.eot');
+	src: url('fonts/museo-sans/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museo-sans/MuseoSans-700.woff') format('woff'),
+		 url('fonts/museo-sans/MuseoSans-700.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museo-sans/MuseoSans-900.eot');
+	src: url('fonts/museo-sans/MuseoSans-900.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museo-sans/MuseoSans-900.woff') format('woff'),
+		 url('fonts/museo-sans/MuseoSans-900.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museo-sans/MuseoSans-300.eot');
+	src: url('fonts/museo-sans/MuseoSans-300.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museo-sans/MuseoSans-300.woff') format('woff'),
+		 url('fonts/museo-sans/MuseoSans-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museo-sans/MuseoSans-500.eot');
+	src: url('fonts/museo-sans/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museo-sans/MuseoSans-500.woff') format('woff'),
+		 url('fonts/museo-sans/MuseoSans-500.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+.donation-form { min-width: 320px; padding: 0; font-family: 'Museo Sans', sans-serif; background: #bce3de; }
+
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { position: relative; min-height: 100%; overflow: hidden; }
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section { position: relative; background-position: center center; -webkit-background-size: cover; background-size: cover; background-attachment: fixed; }
+
+.section .section__image { position: absolute; max-width: 100%; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); }
+
+/* ------------------------------------------------------------ *\
+	Form Donate
+\* ------------------------------------------------------------ */
+
+.form-donate { position: relative; max-width: 752px; padding: 0 10px; margin: 0 auto; font-size: 15px; line-height: 1.2; font-weight: 300; color: #5c5d5f; z-index: 2; }
+
+.form-donate p { margin-bottom: 8px; }
+.form-donate h3 { font-size: 32px; line-height: 1.2; font-weight: 500; color: #fff; }
+.form-donate h4 { font-size: 22px; font-weight: 900; color: #60c5b7; text-transform: uppercase; margin-bottom: 5px; }
+.form-donate h4 small { display: inline; font-size: 12px; font-weight: 300; color: #5c5d5f; }
+.form-donate h5 { font-size: 19px; font-weight: 300; font-style: italic; color: #e97425; margin-bottom: 15px; }
+.form-donate img { margin-bottom: 10px; }
+.form-donate form { position: relative; left: 11px; }
+.form-donate small { display: block; padding-top: 8px; font-size: 13px; }
+
+.form-donate .form__head { padding: 13px 19px 11px; background: #60c5b7; }
+.form-donate .form__honor { position: absolute; display: none; width: 357px; right: 0; bottom: 201px; padding: 16px 13px; background: #fff; }
+.form-donate .form__body { padding: 16px 12px; background: #fff; }
+.form-donate .form__content { max-width: 355px; padding: 44px 0; }
+.form-donate .form__row + .form__row { margin-top: 13px; }
+.form-donate .form__section + .form__section { margin-top: 36px; }
+.form-donate .form__col { float: left; padding: 0 7px; }
+.form-donate .form__col--1of3 { width: 33.3%; }
+.form-donate .form__col--1of2 { width: 50%; }
+.form-donate .form__col--size-1 { width: 67%; }
+.form-donate .form__col--size-2 { width: 33%; }
+
+.form-donate .form__field { position: relative; }
+.form-donate .form__field i { position: absolute; top: 50%; right: 8px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+.form-donate .form__actions { padding-top: 25px; }
+.form-donate .form__actions small { margin-bottom: 9px; }
+.form-donate .form__actions small a { color: #e97425; text-decoration: underline; }
+.form-donate .form__actions small a:hover { text-decoration: none; }
+.form-donate .form__actions .form__btn { width: 100%; max-width: 193px; margin: 0 auto 18px; text-transform: uppercase; }
+
+.form-donate .form__btn { display: block; height: 46px; padding: 0; font-family: 'Museo Sans', sans-serif; font-size: 24px; line-height: 46px; font-weight: 900; color: #fff; text-align: center; background: #3e62ac; -webkit-transition: background .3s; -o-transition: background .3s; transition: background .3s; }
+.form-donate .form__btn:hover { text-decoration: none; background: #60c5b7; }
+
+.form-donate .select { position: relative; }
+.form-donate .select:before { content: ''; position: absolute; width: 0; height: 0; top: 50%; right: 10px; margin-top: -7px; border-width: 14px 7px 0 7px; border-style: solid; border-color: #54575a transparent transparent transparent; pointer-events: none; }
+.form-donate .select select::-ms-expand { display: none; }
+
+.form-donate .form__cols { margin: 0 -7px; }
+.form-donate .form__cols:after { content: ''; display: table; line-height: 0; clear: both; }
+
+.form-donate .form__entry { padding: 20px 0; }
+.form-donate .form__entry p { margin-bottom: 9px; }
+
+.form-donate .form__inner { margin-bottom: 25px; font-size: 18px; color: #60c5b7; }
+.form-donate .form__inner p { padding: 1px 20px 0 0; }
+.form-donate .form__inner span { float: left; width: 66px; height: 66px; margin: 0 12px; border: 3px solid #60c5b7; border-radius: 50%; line-height: 60px; font-weight: 900; text-align: center; }
+.form-donate .form__inner:after { content: ''; display: table; line-height: 0; clear: both; }
+
+.form-donate #dd-company-name-input .Select-input > input,
+.form-donate .select select,
+.form-donate .field { display: block; width: 100%; height: 46px; padding: 0 14px; border: 1px solid #54575a; border-radius: 0; font-family: 'Museo Sans', sans-serif !important; font-size: 19px; font-weight: 300; color: #54575a; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+.form-donate .select select.error,
+.form-donate .field.error { border-color: #da0202; }
+
+.form-donate .select select { padding-right: 30px; }
+
+.form-donate .Select-input { padding: 0 !important; border: 0 !important; border-radius: 0 !important; }
+.form-donate #dd-company-name-input .Select-control { height: 46px; border: 0; border-radius: 0; overflow: visible; background: none; }
+
+.form-donate #dd-company-name-input .Select-input > input,
+.form-donate .select select,
+.form-donate .field::-webkit-input-placeholder { opacity: 1 !important; color: #54575a !important; }
+
+.form-donate #dd-company-name-input .Select-input > input,
+.form-donate .select select,
+.form-donate .field::-moz-placeholder { opacity: 1 !important; color: #54575a !important; }
+
+.form-donate #dd-company-name-input .Select-input > input,
+.form-donate .select select,
+.form-donate .field:-moz-placeholder { opacity: 1 !important; color: #54575a !important; }
+
+.form-donate #dd-company-name-input .Select-input > input,
+.form-donate .select select,
+.form-donate .field:-ms-input-placeholder { opacity: 1 !important; color: #54575a !important; }
+
+@media(max-width: 767px){
+	.form-donate h4 { font-size: 19px; }
+	.form-donate form { left: 0; }
+	
+	.form-donate .form__btn { font-size: 18px; }
+	.form-donate .form__inner p { padding: 5px 0 0; font-size: 15px; }
+	.form-donate .form__honor { position: static; width: 100%; padding: 15px; }
+	
+	.form-donate .form__col--1of2 { float: none; width: 100%; }
+	.form-donate .form__col--1of2 + .form__col--1of2 { margin-top: 13px; }
+}
+
+/* ------------------------------------------------------------ *\
+	List Radios
+\* ------------------------------------------------------------ */
+
+.list-radios { margin: 0 -7px; list-style-type: none; }
+.list-radios:after { content: ''; display: table; line-height: 0; clear: both; }
+
+.list-radios li { float: left; width: 33.3%; padding: 0 7px; margin-bottom: 23px; }
+
+/* ------------------------------------------------------------ *\
+	Form Elements
+\* ------------------------------------------------------------ */
+
+/*  Checkboxes  */
+
+.checkbox { position: relative; }
+
+.checkbox input { position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; z-index: 1; }
+.checkbox input:checked ~ label span:before { content: ''; position: absolute; width: 6px; height: 6px; top: 50%; left: 50%; margin: -3px 0 0 -3px; background: #60c5b7; }
+.checkbox label { position: relative; display: block; padding-left: 21px; margin: 0; font-size: 15px; font-weight: 700; color: #60c5b7; }
+.checkbox label span { position: absolute; width: 14px; height: 14px; top: 2px; left: 0; border: 2px solid #60c5b7; }
+
+/*  Radio  */
+
+.radio { position: relative; }
+
+.radio input { position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; }
+.radio input:checked ~ label { background: #3e62ac; }
+.radio label { display: block; height: 46px; margin: 0; font-size: 24px; line-height: 46px; font-weight: 900; color: #fff; text-align: center; background: #e97425; -webkit-transition: background .3s; -o-transition: background .3s; transition: background .3s; }
+
+/*  Modifier: Radio Small */
+
+.radio--small label { display: -webkit-box; display: -ms-flexbox; display: flex; height: 26px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 12px; line-height: 1.2; }
+
+@media(max-width: 767px){
+	.list-radios--small li { width: 50%; }
+
+	.radio--small label { padding: 0 20px; white-space: nowrap; }
+}
+
+/* ------------------------------------------------------------ *\
+	Ico
+\* ------------------------------------------------------------ */
+
+[class^="ico"] { display: inline-block; vertical-align: middle; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+
+.ico-question { width: 20px; height: 20px; background-image: url(images/icons/ico-question.png); }
